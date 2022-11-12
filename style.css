@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(245, 232, 207);
+}
+
+.container {
+    margin: 0 70px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+header .social_media img {
+    width: 24px;
+    margin-left: 7px;
+}
+
+header .header_extra img {
+    width: 24px;
+    margin-left: 7px;
+}
+
+header .header_image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header_image img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+header .header_image img:first-child {
+    position: absolute;
+    left: -62px;
+    z-index: -1;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav ul li, nav ul h2 {
+    margin: 10px 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+nav ul h2 {
+    font-size: 28px;
+    color: #000;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+/* Carusel */
+.show {
+    margin: 20px 0;
+}
+section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+section img {
+    position: absolute;
+    float: left;
+    width: 60%;
+    top: 0;
+    left: 0;
+}
+section .about {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 39%;
+    display: inline-block;
+    padding: 20px;
+}
+section .about img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+section .about h3 {
+    margin-top: 170px;
+}
+.clr {
+    clear: both;
+}
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 400px;
+}
+section .left {
+    width: 400px;
+}
+.section .left .hero {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+section .right {
+    padding: 30px;
+    background-color: #666;
+}
+.section .right p {
+    font-size: 12px;
+    color: #333;
+}
+.section .right input, .section .right button {
+    margin-top:10px;
+    width: 130px;
+    padding: 7px 15px;
+    border: none;
+}
+.section .right button {
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+.section .right button:hover {
+    background-color: #fff;
+    color: #000;
+}
+/* footer */
+footer p {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    margin: 20px 0;
+    text-align: center;
+}

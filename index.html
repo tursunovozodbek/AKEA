@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AKEA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="social_media">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg==" />
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASdJREFUSEvtlNFNAzEQRF8qICWkA6CCUEI6gA6ADqACQgfQQVIB0AF0AB1ABaAXraOV5csdoFN+spLv49bemZ1Ze8LIMRm5PgeAXoX3ItEUuAQWwElQfAcegHvgs5d22lB3YPGnVLiu9bYj18StAV6B49i5Bp4B2duN6wxwTx12egc8RqfbfAa4ik0mr4FlVcXuuuQR2M5vgZt8LgMU9r+RQeZHIZuE9MllvPjJAN+RqFmU/5mYh2WthPMO0ze1/wtwAcxinQdrQY2NVC2JlOo0sZJpCWVwCBwATS8xyIM+k0uR1hAMAvBgHtNVaOzkWEA5jI8wddCFa100NSx3ofbva8ddaHrdeoucd+VS4wIkazvSuEHMC9peHruOsf7b70MHvbqNLtEPpsU8GRikHtUAAAAASUVORK5CYII=" />
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXFJREFUSEvVlP8xBEEQRt9FgAgQASJABIgAESACZEAEiOCIABkQASJABNSr6lZran/MXtVVMf/c7t50f9Ovv54Jc16TOefnTwgsAvvALrAVFb8CT8Al8NBHYagCk14Birge43ezkfQWOAQ+2oT6BA4iuXHnwEWRxP/9tgAosjdGYAV4iYDtHgwiu499VnFdinRV4Ea53wCedB2YBqoNwB7ksgciu4s+/dLoErCBa0CeXgQ7ESmus0aWPIyiq7UVfMXGpeCe734ukaXAZ8MMPzpDFYjDarIiA8uYRKTD0saDArrjqNGDRFRy1r7vkc2ZOK5FZKBM9baO8nk57Nrk7/NpJM1qq5rsJhNn8rSsqOyBwjpLi3qYVjxtPNtmJQfOJjpUWZkCrudgP3qSUyxdIn97IRZxvcVglRNejSg3poNO4mpoq7Lz29BlZ2DOQGsTh9RqBeSczIdyjkZkBX0XXq9gTQU2WSfNtGoEZkqcQf9f4Bs2OE8Zc7SiFwAAAABJRU5ErkJggg==" />
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvdleExBEEQhb+LgAzIABEgAkTgRIAIEAEhyAARkAGXAREgAuq7mrmanZuZ29uq/XNTdX92ut/r97qnb8LIZzIyPptHsA38rLDNmEvgFNgHPoFH4C7k+f05YuQWGWzAR4PkDTgs3Jsj4TXwUCLw8j0oOAMEyk+MqfFLMgsE8yJzBX9JplUoO7VMdU8Ndb/BgUVxOYHenWQAfvOnfQfAfYPgJRAsQlICm7cbwHYGvg8V36a5OcH3QOCY1mlwqQfaMLR68bSwM4F5D5wSG7Q1QMlXsLiTWloVTsp53qwehEv2lCzy2xHw2gMwDbF61S9tgdqycxJu1iA5rjzM5jZ1bH1s2tU6F2EXFWNqCrQpLrQauK/2qgWe90BQK97rYY0vVnDHunlKCqah0TYtkrnAbGC6NlZhz+837x+tl+x1gka36B/CnzgZFPaBJAAAAABJRU5ErkJggg==" />
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWtJREFUSEvFlf8xRTEQhb9XAR2gAlSADnSADnSAElRAB6gAFaADKkAH5ruTZCLy4xpzx/7zZm5O9uw5u5u3YuFYLZyffyfYATaAR+CjoXYdOALEvgJ3wHPEthRsAlfAfgB6YbdC4PkNIEkeB8CDH2oEVnJfuXQCXGdZWjghKp6KKwmOQ+U1N5R+mB1oh/a1YsqdE/SSizXhVshmdeeAVtZIPqMDOYHyle2vZNuV0mqW1pQktfkFGxUnRStsXhk2Ok1IOLSZewUw9au3B5KttS6G7xb1XmC0R+umYnsEWuV853EJnGYf7MNZgbkI/Zk+9whqNuX7YJVPxTi/hT6mpewR1ORbVFwiycpBSAsWVY3eolqS2GQnrmff0CIBNY9ri/USrPlxNlJglfrci29TUwJHBOJ7T4LJ3epyNxLPHIKWTcPkozHN1ZbN9rV0jFv/Eb9SINiRVYlxG9/6QW9mTdGcHF3MnB78iWRxgi9FiEIZtQkPvgAAAABJRU5ErkJggg==" />
+            </div>
+            <div class="header_image">
+                <img src="./image-1.jpg" alt="Opa">
+                <img src="./image-2.jpg" alt="Opa2">
+            </div>
+            <div class="header_extra">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAExJREFUSEtjZKAxYKSx+QyjFhAM4QEJov8EnYVfAYqjsfmA5hZQ6AFU7QMSBzT3Ac3jgOYW0DyIhr4FNI8Dmlsw9ONg1AcoIUDz0hQAbegGGXzv/l0AAAAASUVORK5CYII=" />
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUJJREFUSEu9le0xBEEURc9GQAhEgAzIgAjIABmQARmQgQwQARnYEIiAOlWv1avR3TO7NWOq9sdOd9/z+r6PWbHws1pYnx5gD7gEjoHDCOQdeAHugfWU4FqAuxDvabjnegxSAxjlQRx8BBTynY83uQLO042OepAhoET+FdYU4aGGIK3aCbuEVp8M0POP2GVULfEiJOQt/uy3cpIBJXoT2IxoEOZD2NU8kwHF+ynRD2/h2WouMuA7Tm3aG91zcwEsit1aluey6DWq7g/jX5O8bZlqjyVbHR2tRvsETjq9oOBz+H4L3ExptLInjwrr3BrPo8IBeJEEXTMYg+rmIC+ODTttcc9pzK0mZGxc29GOa4efogr5U1zPLU1nkutVyKZNVXOhC5kDIDRDzoCnEslcgALRzl9xX84JGP0e9D5MW68tfoMfCXxMGRHr0pcAAAAASUVORK5CYII=" />
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Category</a></li>
+                <h2>AK<span style="color: orangered;">EA.</span></h2>
+                <li><a href="#">Layout</a></li>
+                <li><a href="#">Single Post</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div id="carouselExampleCaptions" class="carousel slide show" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./nature-1.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>TOP AMAZING PLACES To GO in SUMMER</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./nature-2.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./nature-3.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <section>
+            <img src="nature-4.jpg" alt="O'zbekiston vatanim manim">
+            <div class="about">
+                <h3>ABOUT ME</h3>
+                <img src="./image-1.jpg" alt="Opa"> <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem sequi excepturi ea ducimus et vel,
+                    eius hic adipisci libero voluptates aliquid dolor blanditiis distinctio?</p>
+            </div>
+        </section>
+        <div class="clr"></div>
+        <div class="section">
+            <div class="left">
+                <img class="hero" src="./image-2.jpg" alt="opani 2-chi rasmlari">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo fuga deserunt <br> impedit nesciunt
+                    nobis iste, consectetur aspernatur, officiis atque earum voluptates <br> unde maiores beatae delectus
+                    dolorum cum optio ipsum nihil! Itaque illo natus <br>
+                    perferendis provident delectus dolores quia
+                    deleniti nisi velit recusandae nesciunt atque nam, voluptatibus doloribus, blanditiis eius.</p>
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg==" />
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASdJREFUSEvtlNFNAzEQRF8qICWkA6CCUEI6gA6ADqACQgfQQVIB0AF0AB1ABaAXraOV5csdoFN+spLv49bemZ1Ze8LIMRm5PgeAXoX3ItEUuAQWwElQfAcegHvgs5d22lB3YPGnVLiu9bYj18StAV6B49i5Bp4B2duN6wxwTx12egc8RqfbfAa4ik0mr4FlVcXuuuQR2M5vgZt8LgMU9r+RQeZHIZuE9MllvPjJAN+RqFmU/5mYh2WthPMO0ze1/wtwAcxinQdrQY2NVC2JlOo0sZJpCWVwCBwATS8xyIM+k0uR1hAMAvBgHtNVaOzkWEA5jI8wddCFa100NSx3ofbva8ddaHrdeoucd+VS4wIkazvSuEHMC9peHruOsf7b70MHvbqNLtEPpsU8GRikHtUAAAAASUVORK5CYII=" />
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXFJREFUSEvVlP8xBEEQRt9FgAgQASJABIgAESACZEAEiOCIABkQASJABNSr6lZran/MXtVVMf/c7t50f9Ovv54Jc16TOefnTwgsAvvALrAVFb8CT8Al8NBHYagCk14Birge43ezkfQWOAQ+2oT6BA4iuXHnwEWRxP/9tgAosjdGYAV4iYDtHgwiu499VnFdinRV4Ea53wCedB2YBqoNwB7ksgciu4s+/dLoErCBa0CeXgQ7ESmus0aWPIyiq7UVfMXGpeCe734ukaXAZ8MMPzpDFYjDarIiA8uYRKTD0saDArrjqNGDRFRy1r7vkc2ZOK5FZKBM9baO8nk57Nrk7/NpJM1qq5rsJhNn8rSsqOyBwjpLi3qYVjxtPNtmJQfOJjpUWZkCrudgP3qSUyxdIn97IRZxvcVglRNejSg3poNO4mpoq7Lz29BlZ2DOQGsTh9RqBeSczIdyjkZkBX0XXq9gTQU2WSfNtGoEZkqcQf9f4Bs2OE8Zc7SiFwAAAABJRU5ErkJggg==" />
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvdleExBEEQhb+LgAzIABEgAkTgRIAIEAEhyAARkAGXAREgAuq7mrmanZuZ29uq/XNTdX92ut/r97qnb8LIZzIyPptHsA38rLDNmEvgFNgHPoFH4C7k+f05YuQWGWzAR4PkDTgs3Jsj4TXwUCLw8j0oOAMEyk+MqfFLMgsE8yJzBX9JplUoO7VMdU8Ndb/BgUVxOYHenWQAfvOnfQfAfYPgJRAsQlICm7cbwHYGvg8V36a5OcH3QOCY1mlwqQfaMLR68bSwM4F5D5wSG7Q1QMlXsLiTWloVTsp53qwehEv2lCzy2xHw2gMwDbF61S9tgdqycxJu1iA5rjzM5jZ1bH1s2tU6F2EXFWNqCrQpLrQauK/2qgWe90BQK97rYY0vVnDHunlKCqah0TYtkrnAbGC6NlZhz+837x+tl+x1gka36B/CnzgZFPaBJAAAAABJRU5ErkJggg==" />
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWtJREFUSEvFlf8xRTEQhb9XAR2gAlSADnSADnSAElRAB6gAFaADKkAH5ruTZCLy4xpzx/7zZm5O9uw5u5u3YuFYLZyffyfYATaAR+CjoXYdOALEvgJ3wHPEthRsAlfAfgB6YbdC4PkNIEkeB8CDH2oEVnJfuXQCXGdZWjghKp6KKwmOQ+U1N5R+mB1oh/a1YsqdE/SSizXhVshmdeeAVtZIPqMDOYHyle2vZNuV0mqW1pQktfkFGxUnRStsXhk2Ok1IOLSZewUw9au3B5KttS6G7xb1XmC0R+umYnsEWuV853EJnGYf7MNZgbkI/Zk+9whqNuX7YJVPxTi/hT6mpewR1ORbVFwiycpBSAsWVY3eolqS2GQnrmff0CIBNY9ri/USrPlxNlJglfrci29TUwJHBOJ7T4LJ3epyNxLPHIKWTcPkozHN1ZbN9rV0jFv/Eb9SINiRVYlxG9/6QW9mTdGcHF3MnB78iWRxgi9FiEIZtQkPvgAAAABJRU5ErkJggg==" />
+            </div>
+            <div class="right">
+                <h3>Follow us</h3>
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg==" />
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASdJREFUSEvtlNFNAzEQRF8qICWkA6CCUEI6gA6ADqACQgfQQVIB0AF0AB1ABaAXraOV5csdoFN+spLv49bemZ1Ze8LIMRm5PgeAXoX3ItEUuAQWwElQfAcegHvgs5d22lB3YPGnVLiu9bYj18StAV6B49i5Bp4B2duN6wxwTx12egc8RqfbfAa4ik0mr4FlVcXuuuQR2M5vgZt8LgMU9r+RQeZHIZuE9MllvPjJAN+RqFmU/5mYh2WthPMO0ze1/wtwAcxinQdrQY2NVC2JlOo0sZJpCWVwCBwATS8xyIM+k0uR1hAMAvBgHtNVaOzkWEA5jI8wddCFa100NSx3ofbva8ddaHrdeoucd+VS4wIkazvSuEHMC9peHruOsf7b70MHvbqNLtEPpsU8GRikHtUAAAAASUVORK5CYII=" />
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXFJREFUSEvVlP8xBEEQRt9FgAgQASJABIgAESACZEAEiOCIABkQASJABNSr6lZran/MXtVVMf/c7t50f9Ovv54Jc16TOefnTwgsAvvALrAVFb8CT8Al8NBHYagCk14Birge43ezkfQWOAQ+2oT6BA4iuXHnwEWRxP/9tgAosjdGYAV4iYDtHgwiu499VnFdinRV4Ea53wCedB2YBqoNwB7ksgciu4s+/dLoErCBa0CeXgQ7ESmus0aWPIyiq7UVfMXGpeCe734ukaXAZ8MMPzpDFYjDarIiA8uYRKTD0saDArrjqNGDRFRy1r7vkc2ZOK5FZKBM9baO8nk57Nrk7/NpJM1qq5rsJhNn8rSsqOyBwjpLi3qYVjxtPNtmJQfOJjpUWZkCrudgP3qSUyxdIn97IRZxvcVglRNejSg3poNO4mpoq7Lz29BlZ2DOQGsTh9RqBeSczIdyjkZkBX0XXq9gTQU2WSfNtGoEZkqcQf9f4Bs2OE8Zc7SiFwAAAABJRU5ErkJggg==" />
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvdleExBEEQhb+LgAzIABEgAkTgRIAIEAEhyAARkAGXAREgAuq7mrmanZuZ29uq/XNTdX92ut/r97qnb8LIZzIyPptHsA38rLDNmEvgFNgHPoFH4C7k+f05YuQWGWzAR4PkDTgs3Jsj4TXwUCLw8j0oOAMEyk+MqfFLMgsE8yJzBX9JplUoO7VMdU8Ndb/BgUVxOYHenWQAfvOnfQfAfYPgJRAsQlICm7cbwHYGvg8V36a5OcH3QOCY1mlwqQfaMLR68bSwM4F5D5wSG7Q1QMlXsLiTWloVTsp53qwehEv2lCzy2xHw2gMwDbF61S9tgdqycxJu1iA5rjzM5jZ1bH1s2tU6F2EXFWNqCrQpLrQauK/2qgWe90BQK97rYY0vVnDHunlKCqah0TYtkrnAbGC6NlZhz+837x+tl+x1gka36B/CnzgZFPaBJAAAAABJRU5ErkJggg==" />
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWtJREFUSEvFlf8xRTEQhb9XAR2gAlSADnSADnSAElRAB6gAFaADKkAH5ruTZCLy4xpzx/7zZm5O9uw5u5u3YuFYLZyffyfYATaAR+CjoXYdOALEvgJ3wHPEthRsAlfAfgB6YbdC4PkNIEkeB8CDH2oEVnJfuXQCXGdZWjghKp6KKwmOQ+U1N5R+mB1oh/a1YsqdE/SSizXhVshmdeeAVtZIPqMDOYHyle2vZNuV0mqW1pQktfkFGxUnRStsXhk2Ok1IOLSZewUw9au3B5KttS6G7xb1XmC0R+umYnsEWuV853EJnGYf7MNZgbkI/Zk+9whqNuX7YJVPxTi/hT6mpewR1ORbVFwiycpBSAsWVY3eolqS2GQnrmff0CIBNY9ri/USrPlxNlJglfrci29TUwJHBOJ7T4LJ3epyNxLPHIKWTcPkozHN1ZbN9rV0jFv/Eb9SINiRVYlxG9/6QW9mTdGcHF3MnB78iWRxgi9FiEIZtQkPvgAAAABJRU5ErkJggg==" />
+                <br>
+                <b>Newsletter</b>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, possimus!</p>
+                <input placeholder="📩Your Email" type="email"><br>
+                <button type="button">Subscribe</button>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; All rights reserved Mr Ozodbek Developer</p>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
